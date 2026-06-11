@@ -46,6 +46,10 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^6.0.0
 
+  # Used by tools/architecture_check.dart and tools/technical_debt_metrics.dart
+  # to parse and analyze the Dart AST for governance fitness functions.
+  analyzer: ^7.0.0
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

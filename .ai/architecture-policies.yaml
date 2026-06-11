@@ -1,0 +1,86 @@
+version: 1
+
+defaults:
+  enforcement: report_only
+
+scopes:
+  feature:
+    cognitive_complexity:
+      maximum:
+        warning: 20
+        error: 30
+    nesting_depth:
+      maximum:
+        warning: 4
+        error: 6
+    cyclomatic_complexity:
+      maximum:
+        warning: 15
+        error: 25
+    size:
+      loc:
+        warning: 800
+        error: 1200
+    abstraction:
+      distance:
+        mode: informational
+
+  app:
+    cognitive_complexity:
+      maximum:
+        warning: 25
+        error: 35
+    nesting_depth:
+      maximum:
+        warning: 5
+        error: 7
+    cyclomatic_complexity:
+      maximum:
+        warning: 20
+        error: 30
+    coupling:
+      ce:
+        warning: 15
+        error: 25
+    abstraction:
+      distance:
+        mode: informational
+
+  package:
+    cognitive_complexity:
+      maximum:
+        warning: 15
+        error: 25
+    nesting_depth:
+      maximum:
+        warning: 4
+        error: 6
+    cyclomatic_complexity:
+      maximum:
+        warning: 12
+        error: 20
+    coupling:
+      instability:
+        warning: 0.7
+        error: 0.85
+    abstraction:
+      distance:
+        warning: 0.35
+        error: 0.50
+
+  monorepo:
+    cognitive_complexity:
+      maximum:
+        warning: 30
+        error: 45
+    nesting_depth:
+      maximum:
+        warning: 6
+        error: 8
+    cyclomatic_complexity:
+      maximum:
+        warning: 25
+        error: 40
+    abstraction:
+      distance:
+        mode: informational
