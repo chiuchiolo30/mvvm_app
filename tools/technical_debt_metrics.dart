@@ -1,5 +1,4 @@
 // ignore_for_file: avoid_print
-// Technical Debt Metrics — suizo-argentina monorepo
 //
 // Run: melos run check:debt
 // Or:  dart run tools/technical_debt_metrics.dart --path apps/remitos-app-new/lib/features/signature_capture

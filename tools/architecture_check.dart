@@ -1,5 +1,4 @@
 // ignore_for_file: avoid_print
-// Architecture Fitness Functions — suizo-argentina monorepo
 //
 // Run: melos run check:arch
 // Or:  dart run tools/architecture_check.dart --path apps/food_menu
@@ -847,7 +846,7 @@ void _printResults(List<_Violation> violations) {
 
 String _relativePath(String path) {
   final normalized = path.replaceAll(r'\', '/');
-  final marker = 'suizo-argentina/';
+  final marker = 'mvvm_app/';
   final idx = normalized.indexOf(marker);
   return idx >= 0 ? normalized.substring(idx + marker.length) : normalized;
 }

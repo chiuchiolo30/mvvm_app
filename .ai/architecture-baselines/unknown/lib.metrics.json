@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "generatedAt": "2026-06-12T00:04:31.150666Z",
+  "scope": "unknown",
+  "metrics": {
+    "cyclomaticComplexity": {
+      "average": 1.45,
+      "maximum": 5
+    },
+    "cognitiveComplexity": {
+      "average": 2.75,
+      "maximum": 5
+    },
+    "nestingDepth": {
+      "average": 1.27,
+      "maximum": 2
+    },
+    "coupling": {
+      "ce": 14,
+      "ca": 0,
+      "instability": 1.0
+    },
+    "abstraction": {
+      "a": 0.08,
+      "d": 0.08
+    },
+    "size": {
+      "loc": 803,
+      "classes": 26,
+      "functions": 42
+    }
+  },
+  "hotspots": {
+    "cognitiveComplexity": [
+      {
+        "name": "_PokemonGrid::build",
+        "score": 5
+      },
+      {
+        "name": "configureDependencies",
+        "score": 4
+      },
+      {
+        "name": "PokemonListRepositoryImpl::getPokemonPage",
+        "score": 4
+      },
+      {
+        "name": "PokemonListCubit::loadInitialPage",
+        "score": 4
+      },
+      {
+        "name": "PokemonListCubit::loadNextPage",
+        "score": 4
+      }
+    ],
+    "nestingDepth": [
+      {
+        "name": "PokemonListCubit::loadInitialPage",
+        "score": 2
+      },
+      {
+        "name": "_PokemonListScreenState::build",
+        "score": 2
+      },
+      {
+        "name": "_PokemonGrid::build",
+        "score": 2
+      },
+      {
+        "name": "PokemonListCard::build",
+        "score": 2
+      },
+      {
+        "name": "configureDependencies",
+        "score": 1
+      }
+    ]
+  }
+}
